@@ -1,0 +1,365 @@
+---
+title: Climatic influence on changes in community composition in European SeasChanges in fish distribution in European seas
+output:
+  word_document:
+    fig_caption: true
+    fig_height: 10
+    fig_width: 10
+    reference_docx: bootstrap/data/ETC_template.docx
+    toc: false
+    keep_md: false
+---
+
+```{r setup, echo = FALSE}
+library(knitr)
+knitr::opts_chunk$set(
+  echo = FALSE
+)
+```
+
+**Prod-ID:** IND-472-en
+
+**Also known as:** MAR 011
+
+Over the last 45 years, an increase in the number of fish species was observed in the Celtic Sea,
+the Greater North Sea and the Baltic Sea.  This change is mainly related to an increase in the number
+of warm-favouring (Lusitanian, L) species and, to a much lesser extent, an increase in the number of
+cool-favouring (Boreal, B) species. Observed changes are significant in the North Sea and in the
+Skagerrak-Kattegat, where significant correlations were also found between the L/B ratio and increased
+temperature, indicating that changes in fish distribution are related to climate change. In the same
+period, there were no observed changes in the distribution of widely distributed fish species, which
+are less sensitive to temperature changes but are exposed to the same combination of increased sea
+temperature pressures related to human activities in the assessment areas.
+
+## Key messages
+
+* Over the last 45 years, an increase in the number of fish species was observed in the Celtic Sea, the Greater North Sea and the Baltic Sea.
+* This change is mainly related to an increase in the number of warm-favouring (Lusitanian, L) species and, to a much lesser extent, an increase in the number of cool-favouring (Boreal, B) species.
+* Observed changes are significant in the North Sea and in the Skagerrak-Kattegat, where significant correlations were also found between the L/B ratio and increased temperature, indicating that changes in fish distribution are related to climate change.
+* In the same period, there were no observed changes in the distribution of widely distributed fish species, which are less sensitive to temperature changes but are exposed to the same combination of increased sea temperature pressures related to human activities in the assessment areas.
+
+# Are there observed changes in marine fish distribution in European seas and are they related to climate change?
+
+```{r spatio-temporal-map, fig.width = 5, fig.height = 4, fig.cap = cap_1}
+# Figure Caption
+cap_1 <-
+  '**Fig. 1:** Temporal development of the Lusitanian/Boreal
+  species ratio with 5 years interval by year and statistical
+  rectangle, 1975-2019.'
+
+# Output figure
+include_graphics("report/Figure1_temporal_ratio_map.png")
+```
+
+
+**Note:**
+The map shows the temporal development of the distribution of warm-favouring (Lusitanian)
+fish species and of cool-favouring (Boreal) fish species by statistical rectangle in yearly intervals
+of 5 years, 1967 to 2019.  The maps also show ICES divisions.
+
+**Data sources:**
+* Oceanographic database provided by International Council for the Exploration of the Sea (ICES)
+* Database of Trawl Surveys (DATRAS) provided by International Council for the Exploration of the Sea (ICES)
+
+```{r temporal-by-affinity, fig.width = 5, fig.height = 4, fig.cap = cap_2}
+# Figure Caption
+cap_2 <-
+  '**Fig. 2:** Temporal development in the number of species of each
+  biogeographical affinity group.'
+
+# Output figure
+include_graphics("report/Figure2_temporal_species_count_msfd.png")
+```
+
+**Note:**
+The figure shows trends in the number of species observed (solid line) of each
+biogeographical affinity group (Lusitanian, Boreal, Atlantic and unknown).
+A smoother (dotted line) has been added to improve visualisation of the trends.
+
+**Data sources:**
+Database of Trawl Surveys (DATRAS) provided by International Council for
+the Exploration of the Sea (ICES)
+
+```{r temporal-ratio_and_temperature, fig.width = 5, fig.height = 4, fig.cap = cap_3}
+# Figure Caption
+cap_3 <-
+  '**Fig. 3:** Temporal development of the ratio between the number of
+  Lusitanian and Boreal species'
+
+# Output figure
+include_graphics("report/Figure3_temporal_ratio_sst_msfd.png")
+```
+
+**Note:**
+The figure shows the ratio of the number of Lucitanian to Boral species
+observed by year and ICES division.  Also shown is the sea surface
+temperature anomaly (from the previous year) centered and scaled so that both series have the
+same mean and variance to aid visual interpretation.
+
+**Data sources:**
+Database of Trawl Surveys (DATRAS) provided by International Council for
+the Exploration of the Sea (ICES). Sea Surface Temperature Anomalies
+provided by UK Meteorological Office
+
+
+The marine environment is essential for life on Earth. Marine ecosystems
+perform a number of key environmental functions: they regulate the climate,
+prevent erosion, accumulate and distribute solar energy, absorb carbon
+dioxide and maintain biological control. Together, multiple human uses
+and climate change cause multiple pressures and impacts at local and
+global scales, resulting in cumulative changes to oceans and seas,
+coastal and marine habitats, and marine ecosystems overall. These changes
+include, for example, decreased ocean productivity, altered food web
+dynamics and shifts in species distribution. There is a substantial
+amount of literature describing the northward expansion of plants and
+animals during recent decades and comprehensive review can be found
+(e.g. Brander et al., 2016; ICES, 2016 and Poloczanska et al., 2016). These
+changes are attributed to a combination of climate change and increasing
+impacts from multiple anthropogenic activities, but combined impacts from
+various pressures are still poorly understood
+(Hoegh-Guldberg and Bruno, 2010, Dye et al., 2016).
+
+This indicator investigates shifts in fish species distribution based
+on information on the fish species' biogeographical affinity during the
+period 1970-2015. Analysis is performed for the North-East Atlantic
+Ocean, the entrance to the Mediterranean Sea and the southern part of
+the Baltic Sea. The focus of the analysis is on the distribution of
+warm-favouring (Lusitanian) species and of cool-favouring (Boreal) fish
+species. The relationship between observed shifts in fish species
+distribution and trends in SST is analysed to investigate if these
+changes can be related to climate change. Significance is tested by
+Mann-Kendall test (p<0.05).
+
+The analysis, carried out over 45 years, reveals an increase in the
+number of fish species in the assessment area in the Celtic Sea, the
+Greater North Sea and the Baltic Sea (see the Power Point animation).
+The increase is mainly related to an increase in the number of
+warm-favouring (Lusitanian) species and, to a much lesser extent, an
+increase in the number of cool-favouring (Boreal) species in the
+assessment area. The significant change observed is measured as an
+increase in the ratio between the number of Lusitanian (L) and Boreal
+(B) species (L/B) in most of these seas. Changes in the L/B ratio are
+significant in the North Sea and in the Skagerrak-Kattegat, while
+changes are not significant in other areas. There is a year-on-year
+variation, mostly visible when looking at all years. Furthermore, it
+seems as though the spread of Lusitania species does not take place in
+all northward directions, but follows two routes through the English
+Channel and north around Scotland. The temporal changes in the number
+of species with different biogeographical affinity within the sub-divisions
+covered by various surveys are shown in the Figure 1. Plots (Figure 2)
+show the temporal development of the L/B ratio. In a few areas, like the
+Skagerrak-Kattegat, the Danish Straits and the Baltic Sea, the number of
+cool-favouring (Boreal) species seems also to have increased. However,
+this increase in Boreal species in these regions has been similar to
+the increase in Lusitanian species in these regions, keeping the shares
+of the two groups stable. The increased number of non-classified species
+in some sub-divisions in more recent years might well add to this picture
+since it is likely that these non-classified species are in fact of
+Lusitanian origin. No significant changes in the L/B ratio were observed
+in the Bay of Biscay and the Iberian Coast.
+
+Based on annual average temperature data from the UK Met office Hadley Sea Surface Temperature anomaly dataset (Kennedy et al., 2019) ICES IROC, significant correlations were found between temperature and the L/B ratio in various divisions (Figure 2). The best correlation was found with a time lag of 1 or 2 years in the temperature datasets. A time-lag in the response of fish distribution to the observed temperature is expected since it takes time for the individual fish species to respond to temperature by e.g. migration, reproduction, survival etc. In the example presented here, the distribution is measured in the first quarter of the year and, therefore, it is likely to respond to the previous year's temperature conditions. Other factors, such as reduced fishing pressure in some areas, for example, could be responsible for the increase in species, although the fact this increase is caused by warm-favouring (Lusitanian) species seems to indicate that ratio change is probably caused, at least partly, by changing temperature. In contrast to observed changes in the distribution of Boreal and Lusitanian species in the Northern division, we see that there are no changes in the distribution of widely distributed species (Figure 3) over the same time period.
+
+The impacts of an increase in temperature is expected to further accelerate the ocean warming process and cause large scale changes in marine ecosystems, although these are currently unknown. This indicates that changes in ocean temperature in combination with other human impacts may ultimately rearrange the global distribution of life in oceans and seas (Tittensor et al., 2010).
+
+### References in key assessment text
+
+ICES Report on Ocean Climate (IROC) http://ocean.ices.dk/iroc/
+
+Kennedy, J. J., Rayner, N. A., Atkinson, C. P., & Killick, R. E. (2019). An ensemble data set of sea‐surface temperature change from 1850: the Met Office Hadley Centre HadSST.4.0.0.0 data set. Journal of Geophysical Research: Atmospheres, 124. https://doi.org/10.1029/2018JD029867
+
+Brander K.M., Ottersen G., Bakker J.P., Beaugrand G., Herr H., Garthe S., Gilles A., Kenny A., Siebert U., Skjolddal H.R., Tulp I., 2016, Environmental Impacts – Marine Ecosystems. In: Quante, Markus & Colijn, Franciscus (eds) North Sea Region Climate Change Assessment. Springer Extras online. (https://link.springer.com/book/10.1007/978-3-319-39745-0)
+
+Dye, S.R., Hughes S.L., Tinker J., Berry D.L., Holiday N.P., Kent E.C., Kennington K., Inall M., Smyth T., Nolan G., Lyons K., Andres O., Beszcynska-Möller A., 2013, Impacts of climate change on temperature (air and sea). MCCIP Science Review 2013: 1-12.
+
+Hoegh-Guldberg, O. and F. Bruno, J., 2010, The Impact of Climate Change on the World's Marine Ecosystems. Science 328 (5985), 1523-1528. DOI: 10.1126/science.1189930.
+
+ICES (2016) Report of the Working Group on Fish Distribution Shifts (WKFISHDISH) 22-25 November 2016. ICES CM 2016/ ACOM: 55
+
+ICES Report on Ocean Climate (IROC) http://ocean.ices.dk/iroc/
+
+Johnson, G.C., Lyman, J.M., Boyer, T., Cheng, L., Domingues, C.M., Gilson, J., Ishii, M., Killick, R., Monselesan, D., Purkey, S.G., Wijffels, S.E., 2018, Ocean heat content [in State of the Climate in 2017], Bulletin of the American Meteorological Society, 99(8), S72–S77. (https://link.springer.com/book/10.1007/978-3-319-39745-0)
+
+Poloczanska, E. S., M. T. Burrows, C. J. Brown, J. Garcia Molinos, B. S. Halpern, O. Hoegh-Guldberg, C. V. Kappel, P. J. Moore, A. J. Richardson, D. S. Schoeman, W. J. Sydeman, 2016. Responses of marine organisms to climate change across oceans. Frontiers in Marine Science, 3: 10.3389/fmars.2016.00062.
+
+RECLAIM (REsolving CLimAtic Impacts on fish stocks). Deliverable 2.5 Climate effects on distribution and production of species of contrasting ecotypes   December 2008.
+
+Tittensor, D.P., Mora, C., Jetz, W., Lotze, H.K., Ricard, D., Vanden Berghe, E., Worm, B., 2010, Global patterns and predictors of marine biodiversity across taxa, Nature, Vol 466|26 August 2010| doi: 10.1038/nature09329.
+
+## Indicator specification and metadata
+
+### Indicator definition
+
+This indicator looks at the temporal development of the ratio between the number of Lusitanian and Boreal fish species within ICES Statistical rectangles and ICES divisions.
+
+### Units
+
+The spatial units used in this indicator are ICES Statistical Rectangles and ICES divisions (https://www.ices.dk/marine-data/maps/Pages/ICES-statistical-rectangles.aspx)
+
+The units of measurement are the L/B ratio of the number of Lusitanian (L) fish species to Boreal (B) fish species.
+
+## Rationale
+
+### Justification for indicator selection
+
+There is increasing evidence of a northward shift in the distribution of marine plant- and animal species over recent decades (Poloczanska et al., 2016). This northward movement has been attributed mainly to global warming in the terrestrial, limnic and marine environments (e.g. Brander et al. 2016). However, the change in distribution might not be attributable to the changing climate alone, as other environmental and biotic factors influence species distributions. A combination of climate change and the increasing impacts of multiple anthropogenic activities are still poorly understood and are expected to escalate in the future (Hoegh-Guldberg and Bruno, 2010). However, several studies indicate that the number of fish species (Hiddink & Hofstede, 2010) and the northward spread in distribution (Petitgas et al. 2012 and Petitgas et al., 2013) are related to the temperature rise over recent decades. What seems to be crucial in the cases of anchovies is an increase in the frequency of warm summers - which favour larvae and juvenile growth - as well as a decrease in the number of severe winters - which is likely to improve winter survival survival (Petitgas et al. 2012).
+Most of the warming that has happened on Earth over the past 50 years has occurred in the oceans, where a significant rise in temperature has been reported over time (1993-2017) for waters from the sea surface to a depth of 700 meters and from 700-2 000 meters (Johnson et al., 2018). The present indicator includes information on the fish species' biogeographical affinity and trends in SST, in order to investigate the linkage between changes in temperature and changes in the shares of Lusitanian (warm-favouring) and Boreal (cool-favouring) fish species.
+
+## Scientific references
+
+* Brander, K. M., Ottersen, G., Bakker, J. P., Beaugrand, G., Herr, H., Garthe, S., Gilles, A., Kenny, A., Siebert, U., Skjolddal, H. R., Tulp, I., 2016, Environmental Impacts – Marine Ecosystems. In: Quante, Markus & Colijn, Franciscus (eds) North Sea Regi
+* Hiddink, J. G. and Hofsted, R., 2008. Climate induced increases in species richnes of marine fishes, Global Change Biol.14: 453-460.
+* Petitgas, P., Alheit, J., Peck, M.A., Raab, K., Irigoien, X., Heret, M., van der Kooij, J., Pohlmann, T., Wagner, C., Zarraonaindia,I., Dickey-Collas, M., 2012, Anchovy population expansion in the North Sea, Mar.Ecol.Prog.Ser, 444: 1-13.
+* Petitgas, P., Rijnsdorp, A.D., Dickey-Collas, M., Engelhard, G.H., Peck, M.A., Pinnegar, J.K., Drinkwater, K., Huret, M., Nash, R.D.M., 2013, Impacts of climate change on the complex life cycles of fish, Fish. Oceanogr. 22:121-139
+* Johnson, G.C., Lyman, J.M., Boyer, T., Cheng, L., Domingues, C.M., Gilson, J., Ishii, M., Killick, R., Monselesan, D., Purkey, S.G., Wijffels, S.E., 2018, Ocean heat content [in State of the Climate in 2017], Bulletin of the American Meteorological Societ
+* Hoegh-Guldberg, O. and F. Bruno, J., 2010, The Impact of Climate Change on the World's Marine Ecosystems. Science 328 (5985), 1523-1528. DOI: 10.1126/science.1189930
+* Poloczanska, E. S., M. T. Burrows, C. J. Brown, J. Garcia Molinos, B. S. Halpern, O. Hoegh-Guldberg, C. V. Kappel, P. J. Moore, A. J. Richardson, D. S. Schoeman, W. J. Sydeman, 2016. Responses of marine organisms to climate change across oceans. Frontiers
+
+## Policy context and targets
+
+### Context description
+
+#### United Nations Framework
+
+The United Nations Framework Convention on Climate Change (UNFCCC, 1992) was a response to global concerns that change in the Earth’s climate and its adverse effects are a consequence of human activities. The convention entered into force in 1994. Currently, there are 197 Parties to the United Nations Framework Convention on Climate Change, including the EU. The objective of the UNFCCC is ‘to achieve stabilization of greenhouse gas concentrations in the atmosphere at a level that would prevent dangerous anthropogenic interference with the climate system’. The first international agreement that global temperatures should be not be allowed exceed 2 °C was accepted in 2010 (UNFCCC, 2010). The first legally binding agreement to reduce global emissions of carbon dioxide (CO2) and other greenhouse gases and an obligation to start adapting to climate change was signed at the Paris conference in 2015 (UNFCC, 2015). Action to combat climate change and its impacts is also included in the Agenda 2030 (UN GA, 2015).
+
+In 2015, UN contracting parties agreed to aim to limit the increase to 1.5 °C above pre-industrial levels, since this would significantly reduce the risks and impacts of climate change (EC, 2015).
+
+#### EU 2020 Biodiversity Strategy
+
+The European Commission has adopted a strategy to halt the loss of biodiversity and ecosystem services in the EU by 2020 (EC, 2011b). There are six main targets and 20 actions to help Europe reach its goal. The six targets cover: (i) full implementation of EU nature legislation to protect biodiversity, (ii) better protection for ecosystems and more use of green infrastructure, (iii) more sustainable agriculture and forestry, (iv) better management of fish stocks, (v) tighter controls on invasive alien species and (vi) a bigger EU contribution to averting global biodiversity loss.
+
+#### Seventh Environment Action Programme
+
+In November 2013, the European Parliament and the European Council adopted the Seventh EU Environment Action Programme to 2020 ‘Living well, within the limits of our planet’ (EC, 2013b). This programme is intended to help guide EU action on the environment and climate change up to and beyond 2020 based on the following vision: ‘In 2050, we live well, within the planet’s ecological limits. Our prosperity and healthy environment stem from an innovative, circular economy where nothing is wasted and where natural resources are managed sustainably, and biodiversity is protected, valued and restored in ways that enhance our society’s resilience. Our low-carbon growth has long been decoupled from resource use, setting the pace for a safe and sustainable global society.’
+
+#### EU and climate change
+
+EU policies aim to achieve climate target goals as a key priority. After objectives under the Kyoto Protocol for the period 2008-2012 were achieved, the EU Adaption Strategy Package was endorsed (EC, 2013a). The Strategy (EC, 2013a) aims for a more climate-resilient system by anticipating the adverse effects of climate change and taking appropriate action to prevent and minimise the damages. As part of a framework of climate and energy policies, by 2030, the EU has committed to cut emissions in the EU territory by at least 40 % below 1990 levels. The long term targets for 2050 aim to cut EU emissions by at least 80 % compared with 1990 levels (EC, 2010; EC, 2011a). Adaptation aims to anticipate the adverse effects of climate change and take appropriate action to prevent or minimise the damage they can cause, or take advantage of opportunities that may arise (EC, 2013a). Mitigation and adaptation to climate change are built into sectoral policies in EU funds, in the biodiversity strategy (EC, 2011b; EC 2013b), in marine issues (EC, 2008; EC 2017) and in water issues (EC, 2000).
+Climate change is considered in the Marine Strategy Framework Directive (EC, 2008; EC 2017b) as a pressure on the marine environment, which needs to be considered in the programmes of measures as well as in the determination of good environmental status. Threshold values should be set on the basis of the precautionary principle, reflecting the potential risks to the marine environment, including climate change. One of the criteria is related to the distributional range of species, where relevant. Distribution patterns should be in line with prevailing physiographic, geographic and climatic conditions (EC, 2017a). Environmental concerns for Arctic waters in relation to climate change may require action to ensure the environmental protection of the Arctic (EC, 2008).
+
+### Targets
+
+Not applicable
+
+### Related policy documents
+
+* COM (2011) 112 - A Roadmap for moving to a competitive low carbon economy in 2050
+
+With its "Roadmap for moving to a competitive low-carbon economy in 2050" the European Commission is looking beyond these 2020 objectives and setting out a plan to meet the long-term target of reducing domestic emissions by 80 to 95% by mid-century as agreed by European Heads of State and governments. It shows how the sectors responsible for Europe's emissions - power generation, industry, transport, buildings and construction, as well as agriculture - can make the transition to a low-carbon economy over the coming decades.
+
+* COM(2010) 2020 final, Europe 2020: A strategy for smart, sustainable and inclusive growth
+
+European Commission, 2010. Europe 2020: A strategy for smart, sustainable and inclusive growth. COM(2010) 2020 final.
+
+* Commission Decision (EU) 2017/848 of 17 May 2017 laying down criteria and methodological standards on good environmental status of marine waters and specifications and standardised methods for monitoring and assessment, and repealing Decision 2010/477/EU
+
+  regarding Directive 2008/56/EC of the European Parliament and of the Council of 17 June 2008 establishing a framework for community action in the field of marine environmental policy (Marine Strategy Framework Directive)
+
+* Commission Directive (EU) 2017/845 of 17 May 2017 amending Directive 2008/56/EC
+
+Commission Directive (EU) 2017/845 of 17 May 2017 amending Directive 2008/56/EC of the European Parliament and of the Council as regards the indicative lists of elements to be taken into account for the preparation of marine strategies .
+
+* Decision No 1386/2013/EU of the European Parliament and of the Council of 20 November 2013 on a General Union Environment Action Programme to 2020 ‘Living well, within the limits of our planet’
+
+Published: 2013-11-20 Corporate author(s): Council of the European Union , European Parliament Subject: biodiversity , economic growth , environmental impact , environmental protection , EU programme , investment , management of resources , pollution control
+
+* Directive 2000/60/EC of the European Parliament and of the Council establishing a framework for Community action in the field of water policy
+
+EC (2000). Directive 2000/60/EC of the European Parliament and of the Council establishing a framework for Community action in the field of water policy. OJ L327, 22.12.2000.
+
+* EU 2020 Biodiversity Strategy
+
+in the Communication: Our life insurance, our natural capital: an EU biodiversity strategy to 2020 (COM(2011) 244) the European Commission has adopted a new strategy to halt the loss of biodiversity and ecosystem services in the EU by 2020. There are six main targets, and 20 actions to help Europe reach its goal. The six targets cover: - Full implementation of EU nature legislation to protect biodiversity - Better protection for ecosystems, and more use of green infrastructure - More sustainable agriculture and forestry - Better management of fish stocks - Tighter controls on invasive alien species - A bigger EU contribution to averting global biodiversity loss
+
+* EU Adaptation Strategy Package
+
+In April 2013, the European Commission adopted an EU strategy on adaptation to climate change, which has been welcomed by the EU Member States. The strategy aims to make Europe more climate-resilient. By taking a coherent approach and providing for improved coordination, it enhances the preparedness and capacity of all governance levels to respond to the impacts of climate change.
+
+* Kyoto Protocol to the UN Framework Convention on Climate Change
+
+Kyoto Protocol to the United Nations Framework Convention on Climate Change; adopted at COP3 in Kyoto, Japan, on 11 December 1997
+
+* Marine Strategy Framework Directive 2008/56/EC
+
+Directive 2008/56/EC of the European Parliament and of the Council of 17 June 2008 establishing a framework for community action in the field of marine environmental policy (Marine Strategy Framework Directive)
+
+* Paris Agreement
+
+The Paris Agreement. Report of the Conference of the Parties on its twenty-first session, held in Paris from 30 November to 11 December 2015.
+
+* UN Framework Convention on Climate Change
+
+United Nations Framework Convention on Climate Change
+
+* UNFCCC and related policy documents
+
+UNFCCC and related policy documents
+
+* White paper - Adapting to climate change: towards a European framework for action
+
+EU framework for adaptation to climate change, leading to a comprehensive EU adaptation strategy by 2013
+
+## Methodology
+
+### Methodology for indicator calculation
+
+The changes in the number of Lusitanian versus Boreal species (L/B ratio) has been related to mean yearly water temperatures measured either as SST or temperature in the upper layer, i.e. the upper 0-100 m, using data from the ICES Report on Ocean Climate (IROC). The changes in the L/B ratio are also related to inflow data from the same source. However, changes in the L/B ratio seem related to temperature not inflow size. As experienced during data preparation for the ICES WKFISHDISH (ICES 2016), the use of several surveys for the same rectangles and sub-divisions introduces the risk of mixing data with biased catchability, and therefore, only one survey has been chosen for each ICES statistical rectangle and sub-division. The current survey is chosen based on the best temporal and spatial coverage. A list of the surveys used can be found in Table 1.
+
+```{r survey_coverage, fig.cap = tab_1_cap, results="asis"}
+# Figure Caption
+tab_1_cap <-
+  "**Table 1:** Overview of the different surveys used for the specific
+  ICES Sub-divisions"
+
+tab1 <- read.taf("./report/table1_survey_overview.csv")
+
+# Output table
+kable(tab1)
+```
+
+The data have been collected through a range of trawl surveys carried out in western European waters, stretching from the southern part of the Baltic Sea to the entrance to the Mediterranean Sea (Figure 1). The purpose of these surveys has been/is to estimate the fish stocks and their recruitment. The actual data are stored in the DATRAS Database in ICES, where the data can be accessed. It should be noted that there are similar trawl surveys carried out in parts of the Mediterranean Sea, but these data reside in national databases and they are not easily accessible. The spatial and temporal scale varies but, in general, sampling has been relatively stable since 2000. The longest time series can be found from the North Sea where sampling began in 1965. Sampling takes place by trawling in the ICES statistical rectangles in a particular quarter(s) of the year. Apart from determining the species, the biomass and number of specimen per length class have been registered. There is no doubt that the taxonomic resolution changed over time, but it has been at the same (high) level since 1986.
+
+
+```{r ices-rectangles-and-divisions, fig.width = 5, fig.height = 4, fig.cap = cap_4}
+# Figure Caption
+cap_4 <-
+  '**Illustration 1.** Overview of the ICES divisions and statistical
+  rectangles'
+
+# Output figure
+include_graphics("report/Illustration1_sample_overview_map.png")
+```
+
+It is obvious that the taxonomic references to the species caught varies over such a long timeframe. Even though the exchange of data involves the use of AphiaID (species code used by the World Register of Marine Species (WoRMS), not all of the codes are valid. This means that several species occur as duplicates in the database, e.g. that one species occurs under 3 different AphiaIDs. With the purpose of unifying these species codes, a table has been created to transform all non-accepted codes to one valid AphiaID. A total of 603 fish taxa have been identified from these trawl surveys. It should be emphasised that this is not 603 species, as both synonyms and the occurrence of genus and higher taxonomic levels add to the list of taxa. About 8 % of the used Aphia Codes were not valid. It should be mentioned that several epibenthic non-fish species have been recorded in the surveys. All these species have been filtered out for the purpose of this investigation. The total fish and non-fish taxa adds up to more than 1 100 taxa.
+Based on the described catchability issues highlighted in the previous section it was decided to summarise the data to presence/absence scores. The basic data used for this method is therefore the presence/absence of a given species within a specific rectangle in a given year (basically, was the species found in that rectangle that year?). Due to the fluctuation in the occurrence of fish species in each single rectangle, some data analyses have been aggregated to a higher level. The ICES division has been used for this aggregation (Ilustration 1).
+The species have been classified according to biogeographical affinity, using the classification made by the RECLAIM project (RECLAIM, 2008). A list of the classifications of species can be found in Annex 1. It is clear that not all species have been classified in this overview but it is likely that the biogeographical affinity of these unclassified species can be found through a literature review.
+Statistical test used: Mann-Kendall test for monotonic trends. The p-value represents probability that there is no time change and the value is based on random fluctuations only. If the p-value is under 0.05, the alternative hypothesis, i.e. that the trend is significant, is accepted.
+
+### Methodology for gap filling
+
+Not applicable
+
+### Methodology references
+
+Report of the Working Group on Fish Distribution Shifts (WKFISHDISH) Report of the Working Group on Fish Distribution Shifts (WKFISHDISH) 22-25 November 2016. ICES HQ, Copenhagen, Denmark. ICES CM 2016/ACOM: 55, 197pp.
+
+Kennedy, J. J., Rayner, N. A., Atkinson, C. P., & Killick, R. E. ( 2019). An ensemble data set of sea‐surface temperature change from 1850: the Met Office Hadley Centre HadSST.4.0.0.0 data set. Journal of Geophysical Research: Atmospheres, 124. https://doi.org/10.1029/2018JD029867 http://ocean.ices.dk/iroc/
+
+## Uncertainties
+
+### Methodology uncertainty
+
+The methods used are considered rather robust as they transform the catches to presence/absence of species rather than using the fish species abundance. Abundance would likely result in more noise in the data, as the number of specimens caught in a trawl haul influences greatly the actual physical conditions on that day (e.g. current direction and time of day).
+
+### Data sets uncertainty
+
+It should be emphasised that catch in these trawl surveys does not represent exactly the fish fauna that is present in a given area. Several factors influence the catchability of a certain fish. The data collected have to be evaluated in light of some constraints in the way the survey has been carried out:
+* The trawls used in the surveys are benthic trawls, so it is less likely that they have the same catchability as e.g. pelagic species such as mackerel and herring. However, the pelagic species are caught to some extent and even species like the Atlantic blue fin tuna and swordfish appear in the species list (Annex 1). However, it is important to emphasise that there is no reason to expect catchability to change over time in the same habitat and using the same gear.
+* The data coverage in space and time is limited, but has been quite stable over the last 15 years
+* It is most likely that the catchability of species varies between different surveys due to the different gear used. However the restriction to use only one survey for each division ensures that the catchability should be the same over time
+* The catchability of some species most probably varies between different habitats (bottom types). However, it is not likely that the habitats change within the same division.
+
+### Rationale uncertainty
+
+none
